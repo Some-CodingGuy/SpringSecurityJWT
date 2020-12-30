@@ -24,7 +24,8 @@ public class MyUserDetails implements UserDetails {
          * The first line says that we are going to use a stream over the list of roles
          *      (the string is split at the "," and put into an array, that's the array on which the stream will be executed).
          * The second line gets each element at a time and transforms it from a string to a SimpleGrantedAuthority type
-         *      by using the string value as an argument for the SimpleGrantedAuthority constructor.
+         *      by using the string value as an argument for the SimpleGrantedAuthority constructor:
+         *          This applies "new SimpleGrantedAuthority(s)" to all s, s being each element in the array, using a stream.
          * The third line takes all the new SimpleGrantedAuthority objects and puts them in a List, making sure that at
          *      the end of the stream the result is in the correct format.
          */
