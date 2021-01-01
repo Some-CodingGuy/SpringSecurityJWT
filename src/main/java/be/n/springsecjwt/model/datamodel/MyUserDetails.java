@@ -1,4 +1,4 @@
-package be.n.springsecjwt.security.model;
+package be.n.springsecjwt.model.datamodel;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

@@ -1,6 +1,6 @@
 package be.n.springsecjwt.security;
 
-import be.n.springsecjwt.security.Services.MyUserDetailsService;
+import be.n.springsecjwt.service.MyUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
